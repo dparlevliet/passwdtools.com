@@ -80,6 +80,7 @@ body {
   width: 80%;
 }
 
+#generate-api,
 #generate-traditional,
 #generate-secure {
   display: none;

@@ -15,10 +15,23 @@
         </div>
       </div>
       <ul class="password-types">
+        <li class="generate-api" data-pointer="generate-api"> API Key </li>
         <li class="generate-secure" data-pointer="generate-secure"> Secure </li>
         <li class="generate-traditional" data-pointer="generate-traditional"> Traditional </li>
         <li class="selected generate-intuitive" data-pointer="generate-intuitive"> Intuitive </li>
       </ul>
+      <div id="generate-api">
+        <input type="text" class="display-password" placeholder="Generate a new secure api key!">
+        <button class="generate">Generate
+          <select class="size">
+            <option>16</option>
+            <option>32</option>
+            <option selected="selected">64</option>
+            <option>96</option>
+            <option>128</option>
+          </select>
+        </button>
+      </div>
       <div id="generate-secure">
         <input type="text" class="display-password" placeholder="Generate a new secure password!">
         <button class="generate">Generate

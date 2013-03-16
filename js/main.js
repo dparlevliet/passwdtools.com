@@ -29,6 +29,12 @@ $(document).ready(function() {
         password += secure_usables.substring(pos, pos+1);
       }
       $('#generate-secure .display-password').val(password);
+    } else if ($('.generator .generate-api').hasClass('selected')) {
+      for (var x=0; x<=size; x++) {
+        var pos = Math.ceil(Math.random()*traditional_usables.length);
+        password += traditional_usables.substring(pos, pos+1);
+      }
+      $('#generate-api .display-password').val(password);
     } else {
       for (var x=1;x<=4;x++)
         password += random_word() + ((x<4)?' ':'');
