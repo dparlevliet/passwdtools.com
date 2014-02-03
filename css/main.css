@@ -19,6 +19,7 @@ body {
 }
 
 .splash-inner {
+  position: relative;
   height: 400px;
 
   background: -moz-linear-gradient(top, rgba(102,0,0,0.7) 0%, rgba(102,0,0,0) 100%); /* FF3.6+ */
@@ -29,19 +30,28 @@ body {
   background: linear-gradient(to bottom, rgba(102,0,0,0.7) 0%,rgba(102,0,0,0) 100%); /* W3C */
 }
 
-.splash h1 {
+.splash-inner h1 {
   height: 350px;
   max-height: 350px;
   background-image: url('/images/combo_lock.png');
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  position: relative;
-  top: 20px;
-  line-height: 500px;
+  padding-top: 20px;
+  line-height: 580px;
   font-family: "Fjalla One", sans serif;
   font-size: 8em;
   margin: auto;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  z-index: 1;
+}
+
+.splash-inner p {
+  position: absolute;
+  bottom: 15px;
+  right: 50%;
+  color: #bbb;
+  margin-right: -330px;
+  z-index: 2;
 }
 
 .generator {
